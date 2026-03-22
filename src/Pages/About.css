@@ -1,0 +1,144 @@
+.about {
+    padding: 100px 2rem 5rem;
+    min-height: 100vh;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.title-line {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, #6366F1, #8B5CF6);
+    border-radius: 2px;
+    margin: 0.5rem auto 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Text side */
+.about-text h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+}
+
+.about-text p {
+    opacity: 0.68;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-size: 0.97rem;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.info-item {
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    background: rgba(99, 102, 241, 0.04);
+    font-size: 0.88rem;
+}
+
+.info-item strong {
+    color: #6366F1;
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+/* Skills side */
+.skills-section h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+}
+
+.skill-category {
+    margin-bottom: 1.5rem;
+}
+
+.skill-category h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin: 0 0 0.75rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.skill-item {
+    background: rgba(99, 102, 241, 0.04);
+    border: 1px solid rgba(99, 102, 241, 0.12);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.88rem;
+}
+
+.skill-name {
+    font-weight: 600;
+}
+
+.skill-percentage {
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+.skill-bar {
+    height: 6px;
+    background: rgba(99, 102, 241, 0.12);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+}
